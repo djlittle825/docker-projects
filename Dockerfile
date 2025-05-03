@@ -73,7 +73,7 @@ ENV RDS_MASTER_USERNAME=$RDS_MASTER_USERNAME
 ENV RDS_DB_PASSWORD=$RDS_DB_PASSWORD
 
 # Clone the GitHub repository
-RUN git clone https://$PERSONAL_ACCESS_TOKEN@github.com/$GITHUB_USERNAME/$REPOSITORY_NAME.git
+RUN git clone https://github.com/djlittle825/docker-projects.git
 
 # Unzip the zip folder containing the web files
 RUN unzip $REPOSITORY_NAME/$WEB_FILE_ZIP -d $REPOSITORY_NAME/
